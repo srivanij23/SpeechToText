@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EchoScript</h1>
+        <div class="social-links">
+            <a href="https://github.com/srivanij23" target="_blank" class="social-button">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jadav-srivani-1854b1271/" target="_blank" class="social-button">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        
+        <div class="button-group">
+            <button class="button" id="micButton">Start Recording</button>
+            <input type="file" id="audioFile" accept="audio/wav" style="display: none;">
+            <button class="button file-upload" title="Accepted format: WAV files only (max 10MB)" onclick="document.getElementById('audioFile').click()">Choose Audio File</button>
+        </div>
+        <div id="status"></div>
+
+        <div class="result-section">
+            <h2>Transcription Result:</h2>
+            <div id="transcriptionResult"></div>
+            <div class="result-buttons">
+                <button class="button" id="downloadButton" onclick="downloadTranscript()">Download Transcript</button>
+                <button class="button" id="clearButton" onclick="clearTranscript()">Clear</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
