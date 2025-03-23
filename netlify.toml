@@ -1,11 +1,12 @@
 [build]
-  command = "npm install && npm run build"
+  command = "pip install -r requirements.txt && python main.py"
   publish = "templates"
   functions = "netlify/functions"
 
 [build.environment]
-  NODE_VERSION = "16"
-  PYTHON_VERSION = "3.11.0"
+  NODE_VERSION = "18"
+  PYTHON_VERSION = "3.9"
+  PIP_VERSION = "23.0.1"
 
 [[redirects]]
   from = "/*"
@@ -14,3 +15,6 @@
 
 [build.processing]
   skip_processing = false
+
+[context.production.environment]
+  FLASK_ENV = "production"
