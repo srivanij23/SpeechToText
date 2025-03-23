@@ -1,0 +1,34 @@
+{
+  "name": "echoscript",
+  "version": "1.0.0",
+  "description": "Speech to Text Transcription System",
+  "main": "main.py",
+  "scripts": {
+    "start": "python main.py",
+    "build": "pip install -r requirements.txt"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srivanij23/echoscript.git"
+  },
+  "keywords": [
+    "speech-to-text",
+    "transcription",
+    "audio",
+    "flask",
+    "python"
+  ],
+  "author": "Srivani Jadav",
+  "license": "MIT"
+}
