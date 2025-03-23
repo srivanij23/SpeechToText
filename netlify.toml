@@ -1,8 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "npm install && npm run build"
   publish = "templates"
+  functions = "netlify/functions"
 
 [build.environment]
+  NODE_VERSION = "16"
   PYTHON_VERSION = "3.11.0"
 
 [[redirects]]
