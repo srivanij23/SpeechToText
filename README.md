@@ -19,12 +19,6 @@ A web-based application that converts speech to text using advanced audio proces
 - Web Audio API
 - Speech Recognition
 
-## Getting Started
-
-1. Clone the repository:
-```bash
-git clone https://github.com/srivanij23/SpeechToText.git
-
 ## Usage
 ### Recording Audio
 1. Click the "Start Recording" button
@@ -39,10 +33,11 @@ git clone https://github.com/srivanij23/SpeechToText.git
 3. Maximum file size: 10MB
 4. Supported format: WAV only
 5. Wait for upload and transcription
-
+6. 
 ### Downloading Transcription
 1. After transcription, click "Download Transcription"
 2. The transcription will be saved as a text file
+
 ## Author
 ### Srivani Jadav
 - GitHub: srivanij23
@@ -52,3 +47,7 @@ git clone https://github.com/srivanij23/SpeechToText.git
 
 ## License
 1. This project is licensed under the MIT License - see the LICENSE file for details.
+<br>
+1. Clone the repository:
+```bash
+git clone https://github.com/srivanij23/SpeechToText.git
