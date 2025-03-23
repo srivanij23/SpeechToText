@@ -1,9 +1,9 @@
 [build]
-  command = "pip install -r requirements.txt && python main.py"
+  command = "python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt"
   publish = "templates"
-  functions = "netlify/functions"
 
 [build.environment]
+  PYTHON_VERSION = "3.8.12"
   NODE_VERSION = "18"
   PYTHON_VERSION = "3.9"
   PIP_VERSION = "23.0.1"

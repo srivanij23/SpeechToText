@@ -5,10 +5,10 @@
   "main": "main.py",
   "scripts": {
     "start": "python main.py",
-    "build": "python -m pip install --upgrade pip && pip install -r requirements.txt"
+    "build": "python3 -m pip install --upgrade pip && python3 -m pip install -r requirements.txt"
   },
   "engines": {
     "node": "18.x",
-    "python": "3.9"
+    "python": "3.8.12"
   }
 }
